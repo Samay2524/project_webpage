@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects for the Instruments</title>
+</head>
+<body>
+    <h1>Effects for the Instruments, Created by Chirag Solanki</h1>
+
+    <h2>Score Example</h2>
+    <p>The complete example can be found at <code>scores/final-score-with-effects.score</code>.</p>
+    <p>An additional example is located at <code>scores/effectsTest-OnDrums-Chirag.score</code>.</p>
+
+    <pre>
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;score bpm="120" beatspermeasure="4"&gt;
+    &lt;!-- NoiseGate effect applied to various measures --&gt;
+    &lt;instrument instrument="NoiseGate"&gt;
+        &lt;note measure="1" delay=".0025" wet="1" dry="0" threshold=".1" /&gt;
+        &lt;note measure="2" delay=".0025" wet=".75" dry=".25" threshold=".1" /&gt;
+    &lt;/instrument&gt;
+...
+    </pre>
+
+    <p><a href="index.html">Back to Main Project Page</a></p>
+</body>
+</html>

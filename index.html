@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samay, Chirag, and Krishna's Synthesiser Project</title>
+</head>
+<body>
+    <h1>Samay, Chirag, and Krishna's Synthesiser Project</h1>
+
+    <h2>Group Members</h2>
+    <ul>
+        <li><a href="effects.html">Chirag Solanki, Effects</a></li>
+        <li><a href="drum.html">Samay Achar, Drums</a></li>
+        <li><a href="piano.html">Krish Patel, Piano</a></li>
+    </ul>
+
+    <h2>Score File Formatting</h2>
+    <p>Our score files align closely with the Step 5 score, with the only modifications being the addition of pitch adjustments, effects-related properties, and piano-specific attributes.</p>
+
+    <h3>Drum Score</h3>
+    <p>Drums play both the wav samples and the synthesized drum:</p>
+    <pre>
+&lt;instrument instrument="DrumInstrument"&gt;
+    &lt;note measure="1" beat="1" duration="1" note="mpccyrid" pitch="3"/&gt;
+    &lt;note measure="1" beat="2" duration="1" note="synthdrum_1" pitch="1"/&gt;
+&lt;/instrument&gt;
+    </pre>
+
+    <h3>Effects Score</h3>
+    <p>Effects are functional for both Drums and Piano during testing. Adjust the threshold, wet, and dry levels for a more distinct sound:</p>
+    <pre>
+&lt;instrument instrument="NoiseGate"&gt;
+    &lt;note measure="1" delay=".0025" wet="1" dry="0" threshold=".1" /&gt;
+    &lt;note measure="2" delay=".0025" wet=".75" dry=".25" threshold=".1" /&gt;
+    &lt;note measure="2" delay=".0025" wet=".5" dry=".5" threshold=".1" /&gt;
+&lt;/instrument&gt;
+...
+    </pre>
+</body>
+</html>
